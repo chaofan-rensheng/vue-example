@@ -1,0 +1,10 @@
+$highlight: red;
+
+@mixin textCenter {
+    text-align: center;
+}
+
+@mixin wh($width, $height){
+    width: $width;
+    height: $height;
+}
