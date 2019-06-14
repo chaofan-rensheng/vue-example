@@ -23,8 +23,8 @@
     props: {
 
     },
-    data() {
-      return{ 
+    data () {
+      return {
         tags: [
           'Testing', 'Design'
         ]
@@ -33,7 +33,7 @@
     computed: {
 
     },
-    mounted() {
+    mounted () {
 
     },
     methods: {

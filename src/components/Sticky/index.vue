@@ -15,7 +15,7 @@
     props: {
 
     },
-    data() {
+    data () {
       return {
         position: '',
         scrollTop: 0
@@ -24,23 +24,23 @@
     computed: {
 
     },
-    mounted() {
+    mounted () {
       // 也可以通过js的方法进行定位
       window.addEventListener('scroll', this.handleScroll)
     },
-    destroyed() {
+    destroyed () {
       window.removeEventListener('scroll', this.handleScroll)
     },
     methods: {
-      handleScroll(){
+      handleScroll () {
         let stickyDom = this.$el
         let scrollTop = stickyDom.getBoundingClientRect().top
-        if(scrollTop <=  0){
+        if (scrollTop <= 0) {
           this.position = 'fixed'
         } else {
           this.position = ''
         }
-      } 
+      }
     }
   }
 </script>

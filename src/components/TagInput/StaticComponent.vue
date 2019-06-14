@@ -18,16 +18,16 @@
   </div>
 </template>
 <script>
-import RenderlessTagsInput from  './RenderlessTagsInput'
+import RenderlessTagsInput from './RenderlessTagsInput'
 export default {
   name: 'staticComponent',
   components: {
     RenderlessTagsInput
   },
   props: ['value'],
-  data(){
+  data () {
     return {
-      
+
     }
   }
 }

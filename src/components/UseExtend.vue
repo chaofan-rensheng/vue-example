@@ -7,7 +7,7 @@
   </div>
 </template>
 <script>
-import MyAlert from '@/components/Extend/index'
+// import MyAlert from '@/components/Extend/index'
 export default {
   name: 'example',
   data () {
@@ -16,9 +16,9 @@ export default {
     }
   },
   methods: {
-    click(){
+    click () {
       // MyAlert('你好')  //这种是导入组件的样式
-      this.$MyAlert('use extend')  //这种是挂载到vue的原型上面
+      this.$MyAlert('use extend')  // 这种是挂载到vue的原型上面
     }
   }
 }

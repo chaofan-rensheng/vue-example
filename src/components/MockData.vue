@@ -17,21 +17,21 @@
 <script>
 import axios from 'axios'
 export default {
-  name: "mockData",
-  data(){
+  name: 'mockData',
+  data () {
     return {
       tableList: []
     }
   },
 
-  mounted(){
+  mounted () {
     this.getData()
   },
   methods: {
-    getData(){
+    getData () {
       axios.get('/api/tableList').then(({ data }) => {
         this.tableList = data.data
-      }),
+      })
 
       axios.get('https://www.easy-mock.com/mock/5cf08f769b1d864ffed7220c/example/mock').then(res => {
         console.log('easy mock', res)
@@ -41,10 +41,10 @@ export default {
         console.log('easy mock post', res)
       })
     },
-    handleScroll(e){
+    handleScroll (e) {
       console.log(e, 'handleScroll')
     }
-  },
+  }
 }
 </script>
 

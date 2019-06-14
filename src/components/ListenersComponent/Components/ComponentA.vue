@@ -16,19 +16,19 @@
         default: 'eeee'
       }
     },
-    data() {
-      return{
-      
+    data () {
+      return {
+  
       }
     },
     computed: {
 
     },
-    mounted() {
-      console.log(this.$listeners, this.$attrs, this.$props,  '------')
+    mounted () {
+      console.log(this.$listeners, this.$attrs, this.$props, '------')
     },
     methods: {
-    
+  
     }
   }
 </script>

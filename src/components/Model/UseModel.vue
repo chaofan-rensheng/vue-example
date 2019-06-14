@@ -11,7 +11,7 @@ export default {
   components: {
     Model
   },
-  data(){
+  data () {
     return {
 
     }

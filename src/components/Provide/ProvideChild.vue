@@ -11,21 +11,21 @@
 <script>
 export default {
   name: 'provideChild',
-  data(){
+  data () {
     return {
       name: 'provideChild'
     }
   },
 
-  inject: ['datas', '_this'], //子组件注入数据
+  inject: ['datas', '_this'], // 子组件注入数据
 
-  mounted(){
+  mounted () {
     // console.log(this.datas, this._this.number,  'ppppppp')
-    this._this.handleClick('provide child') //在子组件中获取父组件中的方法  并传递数据
+    this._this.handleClick('provide child') // 在子组件中获取父组件中的方法  并传递数据
   },
 
   methods: {
-    handleChange(){
+    handleChange () {
       console.log('handleChange aaaa')
     }
   }

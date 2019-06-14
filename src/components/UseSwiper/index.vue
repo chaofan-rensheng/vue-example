@@ -12,7 +12,7 @@
 
 <script>
   export default {
-    data() {
+    data () {
       return {
         swiperOption: {
           // slidesPerView: 4,
@@ -22,7 +22,7 @@
           navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev'
-          },
+          }
         },
         imgList: [
           require('@/assets/1.jpg'),
@@ -30,11 +30,11 @@
           require('@/assets/3.jpeg'),
           require('@/assets/4.jpeg'),
           require('@/assets/5.jpg'),
-          require('@/assets/6.jpg'),
+          require('@/assets/6.jpg')
         ]
       }
     },
-    mounted(){
+    mounted () {
 
     }
   }

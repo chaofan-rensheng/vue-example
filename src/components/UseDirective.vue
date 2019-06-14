@@ -6,7 +6,7 @@
 </template>
 <script>
 export default {
-  name: 'useDirective',
+  name: 'useDirective'
 }
 </script>
 

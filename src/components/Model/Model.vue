@@ -13,12 +13,12 @@ export default {
       default: 0
     }
   },
-  data(){
+  data () {
     return {
 
     }
   },
-  mounted(){
+  mounted () {
     // console.log(this.checked, 'model checked')
   }
 }

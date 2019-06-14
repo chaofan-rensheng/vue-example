@@ -18,15 +18,15 @@
     props: {
 
     },
-    data() {
-      return{
-      
+    data () {
+      return {
+  
       }
     },
     computed: {
 
     },
-    mounted() {
+    mounted () {
 
     },
     methods: {

@@ -22,8 +22,8 @@
     props: {
 
     },
-    data() {
-      return{
+    data () {
+      return {
         rightWidth: 49,
         leftWidth: 100,
         leftHeight: '49%',
@@ -33,27 +33,27 @@
       }
     },
     computed: {
-      
+  
     },
-    mounted() {
+    mounted () {
       this.clientWidth = document.body.clientWidth
       window.addEventListener('resize', this.handleResize)
     },
     methods: {
-      handleResize(){
+      handleResize () {
         // console.log(document.body.clientHeight, document.body.clientWidth)
         this.clientWidth = document.body.clientWidth
       },
 
-      handleMouseDown(e){
+      handleMouseDown (e) {
         this.downX = e.clientX
       },
-      
-      handleMouseMove(e){
+  
+      handleMouseMove (e) {
         console.log(this.downX, '[][][][]')
-        if(this.downX > 0){
+        if (this.downX > 0) {
           this.moveX = e.clientX - this.downX
-          if(this.moveX > 0){
+          if (this.moveX > 0) {
 
           } else {
             let percentage = 0
@@ -63,7 +63,7 @@
         }
       },
 
-      handleMouseUp(e){
+      handleMouseUp (e) {
         // console.log('handleMouseUp', e.clientX, e.clientY)
         this.downX = 0
         console.log(this.downX, 'up')

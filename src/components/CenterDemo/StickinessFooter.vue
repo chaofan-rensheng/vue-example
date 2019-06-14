@@ -20,9 +20,9 @@
 <script>
 export default {
   name: 'stickinessFooter',
-  data(){
-    return{
-      
+  data () {
+    return {
+
     }
   }
 }

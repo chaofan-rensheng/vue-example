@@ -11,13 +11,13 @@ export default {
   components: {
     RenderDom
   },
-  data(){
+  data () {
     return {
       renderBtn,
-      index:1,
+      index: 1
     }
   }
-  
+
 }
 </script>
 <style>

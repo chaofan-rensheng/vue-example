@@ -1,18 +1,18 @@
 <script>
 export default {
   props: ['value'],
-  data(){
-    return{
+  data () {
+    return {
       newTag: ''
     }
   },
   methods: {
-    removeTag(tag){
+    removeTag (tag) {
       this.$emit('input', this.value.filter(t => t !== tag))
     },
 
-    addTag(){
-      if(this.newTag.trim().length === 0 || this.value.includes(this.newTag.trim())){
+    addTag () {
+      if (this.newTag.trim().length === 0 || this.value.includes(this.newTag.trim())) {
         return false
       }
 
@@ -21,11 +21,11 @@ export default {
     }
   },
 
-  mounted(){
+  mounted () {
     console.log(this.$scopedSlots, 'index')
   },
 
-	render() {
+  render () {
     return this.$scopedSlots.default({
       tags: this.value,
       removeTag: this.removeTag,
@@ -33,15 +33,17 @@ export default {
         value: this.newTag
       },
       inputEvents: {
-        input: (e) => this.newTag = e.target.value,
+        input: function (e) {
+          this.newTag = e.target.value
+        },
         keydown: (e) => {
-          if(e.keyCode === 13){
+          if (e.keyCode === 13) {
             e.preventDefault()
             this.addTag()
           }
         }
       }
     })
-	}
+  }
 }
 </script>

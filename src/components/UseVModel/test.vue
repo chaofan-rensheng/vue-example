@@ -9,13 +9,13 @@
 export default {
   name: 'test',
   props: ['value'],
-  data(){
-    return{
+  data () {
+    return {
 
     }
   },
   methods: {
-    handleChange(e){
+    handleChange (e) {
       this.$emit('input', e.target.value)
     }
   }

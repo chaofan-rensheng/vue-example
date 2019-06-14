@@ -10,8 +10,8 @@ export default {
   components: {
     StaticComponent
   },
-  data(){
-    return{
+  data () {
+    return {
       tags: ['aaaaa', 'bbbb']
     }
   }

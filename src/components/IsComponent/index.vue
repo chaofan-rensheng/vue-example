@@ -7,8 +7,8 @@
 
 <script>
   import ComponentA from './components/ComponentA'
-  import ComponentB from './components/ComponentB';
-  export default {
+  import ComponentB from './components/ComponentB'
+export default {
     name: 'IsComponent',
     components: {
       ComponentA,
@@ -17,20 +17,20 @@
     props: {
 
     },
-    data() {
-      return{
+    data () {
+      return {
         currentComponent: ComponentA
       }
     },
     computed: {
 
     },
-    mounted() {
+    mounted () {
 
     },
     methods: {
-      handleChangeComponent(){
-        this.currentComponent =  this.currentComponent === ComponentA ? ComponentB : ComponentA
+      handleChangeComponent () {
+        this.currentComponent = this.currentComponent === ComponentA ? ComponentB : ComponentA
       }
     }
   }

@@ -8,13 +8,13 @@
 <script>
 export default {
   name: 'commonSlot',
-  data(){
+  data () {
     return {
-
+      aaa: 'fddsfsdfsdfs'
     }
   },
   methods: {
-    bookmark(){
+    bookmark () {
       console.log('click bookmark')
     }
   }

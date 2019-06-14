@@ -12,8 +12,8 @@ export default {
   components: {
     Test
   },
-  data(){
-    return{
+  data () {
+    return {
       params: 'sssss'
     }
   }

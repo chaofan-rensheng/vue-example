@@ -16,19 +16,19 @@
     props: {
 
     },
-    data() {
-      return{
-      
+    data () {
+      return {
+  
       }
     },
     computed: {
 
     },
-    mounted() {
-      
+    mounted () {
+  
     },
     methods: {
-      handleClick(){
+      handleClick () {
         console.log('box click')
       }
     }

@@ -10,13 +10,13 @@ export default {
     Content
   },
   methods: {
-    handleParentClick(){
+    handleParentClick () {
       console.log('-------------------')
     }
   },
-  mounted(){
-    
-  },
+  mounted () {
+
+  }
 
 }
 </script>

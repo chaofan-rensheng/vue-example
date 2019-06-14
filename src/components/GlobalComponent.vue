@@ -5,12 +5,12 @@
 </template>
 <script>
 export default {
-    name: 'globalComponent',
-    data(){
-        return {
-        
-        }
+  name: 'globalComponent',
+  data () {
+    return {
+
     }
+  }
 }
 </script>
 <style lang='scss'>

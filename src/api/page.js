@@ -1,6 +1,5 @@
 import axios from '@/utils/request'
 
-
 export const pageList = data => axios({
   url: '/page/list',
   method: 'post',
