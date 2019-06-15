@@ -115,6 +115,10 @@ export default new Router({
       path: '/renderlessComponent',
       name: 'renderlessComponent',
       component: () => import('@/components/RenderlessComponent/UseRenderlessComponent')
+    }, {
+      path: '/useBaseForm',
+      name: 'useBaseForm',
+      component: () => import('@/components/BaseForm/UseBaseForm')
     }
   ]
 })

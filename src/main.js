@@ -7,6 +7,7 @@ import './styles/common.scss'
 // import GlobalComponent from './components/GlobalComponent'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
+import './styles/element-variables.scss'
 import components from './components'
 import * as filters from './filters' // 过滤器
 import MyAlert from '@/components/Extend/index'
