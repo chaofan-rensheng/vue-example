@@ -1,7 +1,7 @@
 <template>
   <div class="listeners-component">
     <div  class="box">
-      <component-a @click="handleClick" value="value" name="fsfsfsfs" class="sss"></component-a>
+      <component-a @click="handleClick" @test="handleTest" value="value" name="fsfsfsfs" class="sss"></component-a>
     </div>
   </div>
 </template>
@@ -30,6 +30,10 @@
     methods: {
       handleClick () {
         console.log('box click')
+      },
+
+      handleTest () {
+        console.log('handleTest')
       }
     }
   }

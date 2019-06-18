@@ -119,6 +119,22 @@ export default new Router({
       path: '/useBaseForm',
       name: 'useBaseForm',
       component: () => import('@/components/BaseForm/UseBaseForm')
+    }, {
+      path: '/validatorProps',
+      name: 'validatorProps',
+      component: () => import('@/components/ValidatorProps')
+    }, {
+      path: '/bus1',
+      name: 'bus1',
+      component: () => import('@/components/UseBus/Bus1')
+    }, {
+      path: '/useEmitter',
+      name: 'useEmitter',
+      component: () => import('@/components/UseEmitter/Panent.vue')
+    }, {
+      path: '/useSync',
+      name: 'useSync',
+      component: () => import('@/components/UseSync')
     }
   ]
 })
