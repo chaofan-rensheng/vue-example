@@ -2,6 +2,8 @@
   <div class="provide">
     provide
     <provide-child ref='provideChild'></provide-child>
+    <el-button @click="handleAdd">点击试试</el-button>
+    <el-button type="primary" @click="handleProvide">fsadfasfsf</el-button>
   </div>
 </template>
 <script>
@@ -24,7 +26,8 @@ export default {
           label: '产品三'
         }
       ],
-      number: 10
+      number: 10,
+      message: 1000
     }
   },
 
@@ -34,6 +37,7 @@ export default {
 
   provide () { //  父组件提供数据
     return {
+      message: this.message,
       datas: this.datas,
       _this: this // 可以提供this  把父组件中的所有数据都提供给子组件
     }
@@ -46,6 +50,14 @@ export default {
   methods: {
     handleClick (value) {
       console.log('click ' + value)
+    },
+    handleAdd () {
+      this.number += 1
+      console.log(this.number)
+    },
+    handleProvide () {
+      this.message = 90909090
+      console.log(this.message, '///////')
     }
   }
 }

@@ -6,6 +6,9 @@
         {{item.label}}
       </li>
     </ul>
+    <div>{{_this.number}}</div>
+
+    <div>{{message}}</div>
   </div>
 </template>
 <script>
@@ -17,7 +20,7 @@ export default {
     }
   },
 
-  inject: ['datas', '_this'], // 子组件注入数据
+  inject: ['datas', '_this', 'message'], // 子组件注入数据
 
   mounted () {
     // console.log(this.datas, this._this.number,  'ppppppp')

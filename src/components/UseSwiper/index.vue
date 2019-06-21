@@ -7,6 +7,10 @@
       <div class="swiper-button-prev" slot="button-prev"></div>
       <div class="swiper-button-next" slot="button-next"></div>
     </swiper>
+
+    <div>
+      <img src="@/assets/logo.png" alt="">
+    </div>
   </div>
 </template>
 

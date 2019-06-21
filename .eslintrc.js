@@ -23,5 +23,7 @@ module.exports = {
     // // allow debugger during development
     // 'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
     // "comma-spacing": 0,//逗号前后的空格
+    "no-useless-escape": 0,
+    "no-new": 0
   }
 }

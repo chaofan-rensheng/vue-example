@@ -135,6 +135,18 @@ export default new Router({
       path: '/useSync',
       name: 'useSync',
       component: () => import('@/components/UseSync')
+    }, {
+      path: '/useEl',
+      name: 'useEl',
+      component: () => import('@/components/UseElExample')
+    }, {
+      path: '/testAddEventListener',
+      name: 'testAddEventListener',
+      component: () => import('@/components/TestAddEventListener')
+    }, {
+      path: '/baseCascader',
+      name: 'baseCascader',
+      component: () => import('@/components/BaseCascader/useCascader')
     }
   ]
 })

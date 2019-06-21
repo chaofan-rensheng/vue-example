@@ -10,6 +10,7 @@ import 'element-ui/lib/theme-chalk/index.css'
 import './styles/element-variables.scss'
 import components from './components'
 import * as filters from './filters' // 过滤器
+import directives from './directive/index'
 import MyAlert from '@/components/Extend/index'
 import allApi from '@/api/index'
 
@@ -27,8 +28,14 @@ Object.keys(components).forEach((key) => {
   Vue.component(`${name}`, components[key])
 })
 
+// 全局挂载filter
 Object.keys(filters).forEach(key => {
   Vue.filter(key, filters[key])
+})
+
+// 全局挂载directive
+Object.keys(directives).forEach(key => {
+  Vue.directive(key, directives[key])
 })
 
 // 导入api并挂载到全局的属性下面
@@ -44,31 +51,6 @@ Vue.prototype.$MyAlert = MyAlert
 // Vue.component('global-component', GlobalComponent)
 Vue.config.productionTip = false
 Vue.config.silent = false
-
-Vue.directive('focus', {
-  // 当被绑定的元素插入到 DOM 中时……
-  inserted: function (el) {
-    // 聚焦元素
-    el.focus()
-  }
-})
-
-Vue.directive('demo', {
-  inserted: function (el, binding, vnode) {
-    console.log(el, 'demo directive')
-    console.log(binding, 'demo directive')
-    console.log(vnode, 'demo directive')
-
-    var s = JSON.stringify
-    el.innerHTML =
-      'name: ' + s(binding.name) + '<br>' +
-      'value: ' + s(binding.value) + '<br>' +
-      'expression: ' + s(binding.expression) + '<br>' +
-      'argument: ' + s(binding.arg) + '<br>' +
-      'modifiers: ' + s(binding.modifiers) + '<br>' +
-      'vnode keys: ' + Object.keys(vnode).join(', ')
-  }
-})
 
 /* eslint-disable no-new */
 new Vue({
