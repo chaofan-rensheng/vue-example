@@ -88,5 +88,5 @@ export default {
   .use-cascader{
     padding: 20px;
     border: 1px solid red;
-  }
+  }         
 </style>
