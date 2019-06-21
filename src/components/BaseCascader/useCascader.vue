@@ -85,7 +85,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .use-cascader{
+  .use-cascader{    
     padding: 20px;                          
     border: 1px solid red;     
   }         
