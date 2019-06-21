@@ -147,6 +147,10 @@ export default new Router({
       path: '/baseCascader',
       name: 'baseCascader',
       component: () => import('@/components/BaseCascader/useCascader')
+    }, {
+      path: '/usemixins',
+      name: 'useMixins',
+      component: () => import('@/components/UseMixins')
     }
   ]
 })

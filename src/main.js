@@ -47,7 +47,6 @@ allApi.keys().map(item => {
 
 Vue.use(ElementUI)
 Vue.prototype.$MyAlert = MyAlert
-
 // Vue.component('global-component', GlobalComponent)
 Vue.config.productionTip = false
 Vue.config.silent = false

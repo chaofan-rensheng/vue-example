@@ -8,7 +8,7 @@
     </ul>
     <div>{{_this.number}}</div>
 
-    <div>{{message}}</div>
+    <div>{{message.num}}</div>
   </div>
 </template>
 <script>

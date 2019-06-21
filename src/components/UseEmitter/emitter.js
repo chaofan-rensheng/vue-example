@@ -27,6 +27,7 @@ export default {
         }
       }
       if (parent) {
+        console.log(parent, '-------')
         parent.$emit.apply(parent, [eventName].concat(params))
       }
     },
