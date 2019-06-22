@@ -54,6 +54,7 @@ export default {
           }
         ],
         menuList: [
+  
           {
             name: '哈哈',
             value: 'haha'

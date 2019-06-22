@@ -151,6 +151,10 @@ export default new Router({
       path: '/usemixins',
       name: 'useMixins',
       component: () => import('@/components/UseMixins')
+    }, {
+      path: '/useVueLazyComponent',
+      name: 'useVueLazyComponent',
+      component: () => import('@/components/UseVueLazyComponent')
     }
   ]
 })
