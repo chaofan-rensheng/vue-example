@@ -12,7 +12,6 @@ export default {
       BaseCascader
     },
     props: {
-
     },
     data () {
       return {
@@ -54,7 +53,6 @@ export default {
           }
         ],
         menuList: [
-  
           {
             name: '哈哈',
             value: 'haha'
@@ -69,7 +67,6 @@ export default {
       }
     },
     computed: {
-
     },
     provide () {
       return {
@@ -77,7 +74,6 @@ export default {
       }
     },
     mounted () {
-
     },
     methods: {
   
@@ -86,8 +82,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .use-cascader{    
-    padding: 20px;                          
-    border: 1px solid red;     
+  .use-cascader{
+    padding: 20px;
+    border: 1px solid red;
   }         
 </style>
