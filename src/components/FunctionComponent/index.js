@@ -1,4 +1,3 @@
-
 export default (h, backValue, btn) => {
   return h('div', {
     'class': [`btn-${backValue}`],

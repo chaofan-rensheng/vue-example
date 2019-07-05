@@ -1,18 +1,16 @@
 <template>
-  <div class="use-mixins">
-    <div>useMxin</div>
-    <el-button type="primary" @click="handleClick">点击试试</el-button>
+  <div class="test-demo">
+    <div>test demo</div>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import test from '@/mixins/test'
 export default {
-  name: 'UseMixins',
+  name: 'TestDemo',
   components: {
 
   },
-  mixins: [test],
   props: {
 
   },

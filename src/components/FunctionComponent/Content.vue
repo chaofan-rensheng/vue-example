@@ -20,7 +20,7 @@ export default {
 
 }
 </script>
-<style>
+<style scoped>
   .btn-primary{
     width: 100px;
     height: 100px;
@@ -37,5 +37,3 @@ export default {
     background: lightblue;
   }
 </style>
-
-

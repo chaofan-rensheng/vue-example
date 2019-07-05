@@ -7,6 +7,7 @@
   </div>
 </template>
 <script>
+import Vue from 'vue'
 import ProvideChild from './ProvideChild'
 export default {
   name: 'provide',
@@ -47,6 +48,16 @@ export default {
     }
   },
 
+  // 方法二:使用2.6最新API Vue.observable 优化响应式 provide
+  // provide () {
+  //   this.message = Vue.observable({
+  //     color: 'blue'
+  //   })
+  //   return {
+  //     theme: this.theme
+  //   }
+  // },
+
   mounted () {
     this.$refs.provideChild.handleChange() // 在父组件中调用子组件的方法
   },
@@ -67,4 +78,3 @@ export default {
   }
 }
 </script>
-

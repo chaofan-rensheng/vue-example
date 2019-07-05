@@ -17,6 +17,8 @@ import CenterDemo from '@/components/CenterDemo/index'
 import StickinessFooter from '@/components/CenterDemo/StickinessFooter'
 import Sticky from '@/components/Sticky/index'
 
+import testDemoRouter from './modules/testDemo'
+
 Vue.use(Router)
 
 export default new Router({
@@ -151,10 +153,12 @@ export default new Router({
       path: '/usemixins',
       name: 'useMixins',
       component: () => import('@/components/UseMixins')
-    }, {
-      path: '/useVueLazyComponent',
-      name: 'useVueLazyComponent',
-      component: () => import('@/components/UseVueLazyComponent')
+    },
+    testDemoRouter,
+    {
+      path: '/useDebounce',
+      name: 'useDebounce',
+      component: () => import('@/components/UseDebounce')
     }
   ]
 })

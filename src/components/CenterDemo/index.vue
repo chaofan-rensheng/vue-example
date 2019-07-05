@@ -20,7 +20,7 @@ export default {
     width: 400px;
     height: 400px;
     background: lightgray;
-    display: flex;  
+    display: flex;
     /* 实现子元素的垂直水平居中 */
   }
   .demo1_inner{
@@ -30,4 +30,3 @@ export default {
     margin: auto;
   }
 </style>
-

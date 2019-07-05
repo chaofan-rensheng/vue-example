@@ -1,24 +1,23 @@
 <template>
-  <div class="use-mixins">
-    <div>useMxin</div>
-    <el-button type="primary" @click="handleClick">点击试试</el-button>
+  <div class="component-a">
+    <slot >
+      <div>默认内容</div>
+    </slot>
   </div>
 </template>
 
 <script>
-import test from '@/mixins/test'
 export default {
-  name: 'UseMixins',
+  name: 'componentA',
   components: {
 
   },
-  mixins: [test],
   props: {
 
   },
   data () {
     return {
-
+      message: 'child'
     }
   },
   computed: {
@@ -28,7 +27,9 @@ export default {
 
   },
   methods: {
-
+    handleClick () {
+      console.log('handleClick')
+    }
   }
 }
 </script>

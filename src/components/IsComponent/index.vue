@@ -6,34 +6,34 @@
 </template>
 
 <script>
-  import ComponentA from './components/ComponentA'
-  import ComponentB from './components/ComponentB'
+import ComponentA from './components/ComponentA'
+import ComponentB from './components/ComponentB'
 export default {
-    name: 'IsComponent',
-    components: {
-      ComponentA,
-      ComponentB
-    },
-    props: {
+  name: 'IsComponent',
+  components: {
+    ComponentA,
+    ComponentB
+  },
+  props: {
 
-    },
-    data () {
-      return {
-        currentComponent: ComponentA
-      }
-    },
-    computed: {
+  },
+  data () {
+    return {
+      currentComponent: ComponentA
+    }
+  },
+  computed: {
 
-    },
-    mounted () {
+  },
+  mounted () {
 
-    },
-    methods: {
-      handleChangeComponent () {
-        this.currentComponent = this.currentComponent === ComponentA ? ComponentB : ComponentA
-      }
+  },
+  methods: {
+    handleChangeComponent () {
+      this.currentComponent = this.currentComponent === ComponentA ? ComponentB : ComponentA
     }
   }
+}
 </script>
 
 <style lang="scss" scoped>
